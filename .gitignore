@@ -1,0 +1,37 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Environment & local overrides
+.env
+.env.local
+.env.*.local
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+frontend/test-results/
+
+# Backend / Gradle
+backend/.gradle/
+backend/build/
+backend/out/
+backend/.idea/
+
+# Playwright & E2E artifacts
+frontend/coverage/playwright-report/
+playwright-report/
+test-results/
+
+# Docker / Compose
+.docker/
+
+# Misc editors
+.vscode/
+.idea/

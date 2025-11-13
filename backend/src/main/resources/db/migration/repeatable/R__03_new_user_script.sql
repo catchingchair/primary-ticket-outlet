@@ -26,6 +26,5 @@ WHERE u.email = 'NewUser@example.com'
 ON CONFLICT DO NOTHING;
 
 -- update the event for the manager role to be the Downtown Theater Venue
-UPDATE user_roles 
-SET venue_id = (SELECT venue_id FROM events WHERE title = 'Downtown Theater') 
-WHERE email = 'NewUser@example.com' AND role_id = (SELECT role_id FROM roles WHERE name = 'ROLE_MANAGER');
+UPDATE user_roles SET venue_id = '11111111-1111-1111-1111-111111111111' 
+WHERE role_id = (Select id from roles WHERE name = 'ROLE_MANAGER');
